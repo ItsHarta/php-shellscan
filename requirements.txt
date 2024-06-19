@@ -1,3 +1,1 @@
-python_apt==2.9.0
-yara==1.7.7
 yara_python==4.5.1

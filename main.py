@@ -91,7 +91,7 @@ def main():
         mode = 'scan'
 
     os.makedirs(basepath + '/.detection', exist_ok=True)
-    timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S.%f")
     print("=============================================")
     print(f'Scan initated at {timestamp}, running in {mode} mode')
 
@@ -102,7 +102,7 @@ def main():
     else:
         print('Invalid path or file supplied')
     
-    timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S.%f")
     print(f'Scan finished at {timestamp}.')
     print("=================End of Scan==================")
 

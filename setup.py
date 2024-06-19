@@ -27,7 +27,7 @@ cache = apt.Cache(apt.progress.text.OpProgress())
 fprogress = apt.progress.text.AcquireProgress()
 iprogress = TextInstallProgress()
 
-pkg_name = "neofetch"
+pkg_name = "incron"
 pkg = cache[pkg_name]
 
 # install or remove, the importend thing is to keep us busy :)

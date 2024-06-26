@@ -21,10 +21,10 @@ def check_requirements():
 
 def  start_scan(path, directory = False):
     """for scanning files using yara rules"""
-    if not os.path.exists(basepath + '/signatures/core.yar'):
+    if not os.path.exists(basepath + '/signatures/rules2.yar'):
         print("The signature file is missing. Unable to start scan.")
         return
-    rules = yara.compile(basepath + '/signatures/core.yar')
+    rules = yara.compile(basepath + '/signatures/rules2.yar')
 
     if directory:
         for root, dir, files in os.walk(path):

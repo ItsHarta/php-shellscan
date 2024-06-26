@@ -42,6 +42,7 @@ private rule r57
     strings:
         $string = "r57"
         $table = "temp_r57_table"
+        $name = "RusH security team"
 
     condition:
         any of them or
